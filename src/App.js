@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import TodoItems from './components/TodoItems/Todoitems';
+import AddItem from './components/AddItem/Additems';
+
 class App extends Component{
 
     state = {
@@ -17,6 +19,8 @@ class App extends Component{
     return(
         <div className="App">
           Todo App
+          <TodoItems />
+          <AddItem />
         </div>
   )};
 }
