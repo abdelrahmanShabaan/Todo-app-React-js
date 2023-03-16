@@ -9,9 +9,9 @@ class App extends Component{
 
     state = {
       items: [
-                {id:1, name : 'mohamed' , age :22},
-                {id:2, name : 'abdelrahman' , age :14},
-                {id:3, name : 'ismaile' , age :28}
+                {id:1, name : 'defualt' , age :0},
+                {id:1, name : 'defualt' , age :0}
+           
               ]
             }
 
@@ -32,8 +32,8 @@ class App extends Component{
 
   render(){
     return(
-        <div className="App">
-          Todo App
+        <div className="App container">
+          <h1 className='text-center'>Todo App</h1>
           <TodoItems items={this.state.items} deleteItem={this.deleteItem} />
           <AddItem addItem={this.addItem}/>
         </div>
