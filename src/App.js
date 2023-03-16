@@ -23,12 +23,19 @@ class App extends Component{
 
             }
 
+        addItem  = (item) => {
+            item.id = Math.random();
+              let items = this.state.items;
+              items.push(item);
+              this.setState({items})
+        }
+
   render(){
     return(
         <div className="App">
           Todo App
           <TodoItems items={this.state.items} deleteItem={this.deleteItem} />
-          <AddItem />
+          <AddItem addItem={this.addItem}/>
         </div>
   )};
 }
