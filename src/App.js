@@ -19,7 +19,7 @@ class App extends Component{
     return(
         <div className="App">
           Todo App
-          <TodoItems />
+          <TodoItems items={this.state.items} />
           <AddItem />
         </div>
   )};
